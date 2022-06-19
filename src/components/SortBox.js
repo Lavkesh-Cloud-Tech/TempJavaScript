@@ -1,10 +1,10 @@
 const SortBox = (props) => {
   return (
     <div>
-    <select className="sortBox" defaultValue={'DEFAULT'} onChange={(e) => props.setSortState(e.target.value)}>
-        <option value="DEFAULT" disabled>Sort By...</option>
-        <option value="ByYear">ByYear</option>
-        <option value="ById">ById</option>
+      <select className="sortBox" defaultValue={'DEFAULT'} onChange={props.onSortInputChangeHandler}>
+        <option value="DEFAULT" disabled>Sort By</option>
+        <option value="ByEpisode">Episode</option>
+        <option value="ByYear">Year</option>
       </select>
     </div>
   );

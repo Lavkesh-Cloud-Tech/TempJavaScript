@@ -3,15 +3,19 @@
   border-right: 1px solid lightgrey;
 }
 .moviesList {
-  display: flex;
-  border-bottom: 1px solid lightgray;
+   width: 100%;
+   border-collapse: collapse;
 }
-li {
-  list-style: none;
-  margin: auto;
-  color: rgb(55, 52, 52);
-  font-family: Arial, Helvetica, sans-serif;
+
+.moviesList tr {
+    border: 1px solid black;
 }
+
+.moviesList td {
+  padding-left: 15px;
+  text-align: left;
+}
+
 select::-ms-expand {
   display: none;
 }
